@@ -13,12 +13,14 @@
 # file for each of the backends you test against.
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-    },
-    "other": {
-        "ENGINE": "django.db.backends.sqlite3",
-    },
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'test_django',
+        'USER': '!!!!',
+        'PASSWORD': '!!!!',
+        'HOST': 'localhost',
+        'PORT': 5432
+    }
 }
 
 SECRET_KEY = "django_tests_secret_key"
